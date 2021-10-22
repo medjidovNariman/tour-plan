@@ -380,7 +380,6 @@ template {
 }
 
 .navbar-bottom {
-  padding: 31px 0;
   background-color: #0A223D;
 }
 
@@ -397,12 +396,19 @@ template {
   color: #fff;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 31px 0;
 }
 
 .navbar-menu__link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+}
+
+.logo {
+  width: 177px;
 }
 
 .search {
@@ -464,5 +470,38 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding: 30px 0;
+  }
+  .navbar__search {
+    max-width: 340px;
+    margin-left: auto;
+  }
+  .navbar-menu {
+    padding: 22px 0;
+  }
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
