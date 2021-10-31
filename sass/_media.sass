@@ -17,6 +17,9 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .search
+    &__input
+      width: 340px
 @media ( max-width:  768px)
   .container
     max-width: 576px
@@ -27,10 +30,10 @@
       display: none  
   .menu
     &-button
-      
       display: flex
       width: 16px
       height: 11px
+      padding: 0
       border: none
       background-color: #fff
       align-items: center 
@@ -42,8 +45,31 @@
         height: 1px
         background-color: $text-color
 
-@media (max-width: 576px)
+  .stars
+    flex-basis: content
+  .hotel 
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 4px
+        margin-bottom: 0
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+
+
+@media ( max-width: 576px)
   .logo
     width: 99px
   
+@media ( max-width: 320px)
+  .container
+    max-width: 280px
   
