@@ -16,3 +16,4 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--next',
   },
 });
+
